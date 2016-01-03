@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NewYear2016</title>
+    <title>JonManock</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -18,50 +18,157 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body>
+    <header class='header fixed clearfix navbar navbar-fixed-top'>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="header-left clearfix">
+              <div class="site-name-and-slogan smooth-scroll">
+                <div class="site-name">
+                  <i class='fa fa-bullseye'></i>
+                  <a href="#banner">Jon Manock</a>
+                </div>
+                <div class="site-slogan"><i class='fa fa-code'>Coding and some other stuff</i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="main-navigation animation">
+              <nav class='navbar navbar-default' role='navigation'>
+                <div class="container-fluid">
+                  <div class="navbar-head">
+                    <button type='button' class='navbar-toggle' data-toggle='collapse' data-targer='#navbar-collapse-1'>
+                      <span class='sr-only'>Toggle Navigation</span>
+                      <span class='icon-bar'></span>
+                      <span class='icon-bar'></span>
+                      <span class='icon-bar'></span>
+                    </button>
+                  </div>
+                  <div class="collapse navbar-collapse scrollspy smooth-scroll" id='navbar-collapse-1'>
+                    <ul class='nav navbar-nav navbar-right'>
+                      <li class='active'><a href="#banner">Home</a></li>
+                      <li><a href="#portfolio">Portfolio</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="banner" class='banner fixIt'>
+      <div class="banner-image"></div>
+      <div class="banner-caption">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 object-non-visable" data-animation-effect='fadeIn'>
+              <h1 class='text-center'>Hello I'm <span>Jon</span></h1>
+              <p class='lead text-center'>An Orlando based web developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="default-bg space blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class='text-center'>Let's Work Together!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <h1 class='text-center title' id='portfolio'>Portfolio</h1>
+        <div class="separator"></div>
+        <p class='lead text-center'>Here are some project I've worked on.</p>
+        <br>
+        <div class="row object-non-visible" data-animation-effect='fadeIn'>
+          <div class="col-md-12">
+            <div class="filters text-center">
+              <ul class='nav nav-pills'>
+                <li class='active'><a href="#" data-filter='*'>All</a></li>
+                <li><a href="#" data-filter='.web-design'>Web design</a></li>
+              </ul>
+            </div>
+            <div class="isotope-container row grid-space-20">
+              <div class="col-sm-6 col-md-3 isotope-item web-design">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <img src="images/something.png" alt="">
+                    <a class='overlay' data-toggle='modal' data-targer='#project-3'>
+                      <i class='fa fa-search-plus'></i>
+                      <span>Web Design</span>
+                    </a>
+                  </div>
+                  <a class='btn btn-default btn-block' data-toggle='modal' data-target='#project-3'>Something should go here</a>
+                </div>
+                <div class="modal fade" id='project-3' tabindex='-1' role='dialog' aria-labelling='project-3-label' aria-hidden='true'>
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-header">
+                      <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span><span class='sr-only'>Close</span></button>
+                      <h4 class='modal-title' id='project-8-label'>Some Title</h4>
+                    </div>
+                    <div class="modal-body">
+                      <h3>Some title</h3>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>This should say something about the project</p>
+                        </div>
+                        <div class="col-md-6">
+                          <img src="images/something.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <center><button type='button' class='btn btn-sm btn-default' data-dismiss='modal'>Close</button></center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer section">
+        <div class="conatiner">
+          <h1 class='title text-center' id='contact'>Have some questions, or want to work with me?</h1>
+          <h2 class='title text-center'>Here are some easy ways to get in touch.</h2>
+          <div class="space"></div>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="footer-content">
+                <ul class='list-icons'>
+                  <li><i class='fa fa-github pr-10'></i><a href="http://github.com/jmanock" target='_blank'></a></li>
+                  <li><i class='fa fa-envelope-o pr-10'></i>jonmanock@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">NewYear2016</h3>
-      </div>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-          
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-          
-        </div>
-      </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
-    </div>
-    
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -77,7 +184,7 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap/js/affix.js"></script>
     <script src="/bower_components/bootstrap/js/alert.js"></script>
@@ -92,7 +199,7 @@
     <script src="/bower_components/bootstrap/js/collapse.js"></script>
     <script src="/bower_components/bootstrap/js/tab.js"></script>
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
